@@ -1,0 +1,514 @@
+:root {
+  --white: #ffffff;
+  --dark: #272626;
+  --yellow: #f7c200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+/* Header Section */
+/* .main-header {
+  background: url(./assets/main-header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80rem;
+} */
+
+/* Carousel */
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.hero-1 {
+  background: url(./assets/main-header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80rem;
+}
+
+.hero-2 {
+  background: url(./assets/Rectangle\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80rem;
+}
+
+.hero-3 {
+  background: url(./assets/Rectangle\ 291.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80rem;
+}
+.hero-1 h2,
+.hero-2 h2,
+.hero-3 h2 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  /* font-family: sans-serif; */
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.4rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 96rem;
+  color: var(--white);
+  margin-top: 24.1rem;
+}
+.hero-2 h2 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  /* font-family: sans-serif; */
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.2rem;
+  max-width: 32rem;
+  margin-top: 29rem;
+  text-transform: uppercase;
+}
+
+.hero-3 h2 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  /* font-family: sans-serif; */
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.2rem;
+  max-width: 40rem;
+  margin-top: 33.5rem;
+  text-transform: uppercase;
+}
+
+.swiper-pagination {
+  top: 64%;
+}
+
+.swiper-pagination-bullet {
+  background: var(--white);
+  opacity: 1;
+  font-size: 9rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--yellow);
+  font-size: 9rem;
+}
+
+/* Nav */
+
+.navigation-section nav {
+  padding-top: 3.2rem;
+  color: var(--white);
+  padding-left: 7.8rem;
+  padding-right: 9.1rem;
+  max-width: 144rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100000;
+  /* margin: 0 auto; */
+}
+
+.navigation-list {
+  list-style: none;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.navigation-list li a {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navigation-list li:hover {
+  border-bottom: 0.2rem solid var(--white);
+}
+
+.navigation-bar :not(.navigation-list :first-child) {
+  margin-left: 5.1rem;
+}
+
+.mobile-nav-item,
+.mobile-nav-item:hover {
+  padding-bottom: 1rem;
+  text-decoration: none;
+  border: 0 !important;
+  margin-left: 0 !important;
+}
+
+.mobile-nav-text,
+.mobile-nav-text:hover {
+  text-decoration: none;
+}
+
+/* Main Section */
+.section-main {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-right: 9rem;
+  padding-left: 9rem;
+  padding-top: 11.8rem;
+  padding-bottom: 20rem;
+}
+
+#section-main-text-1 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: var(--dark);
+  max-width: 68rem;
+  padding-bottom: 2.4rem;
+}
+
+.section-main-about p:first-of-type {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: var(--dark);
+  max-width: 80rem;
+  padding-bottom: 3.2rem;
+}
+
+.section-main-about p a {
+  font-family: "Cabinet Grotesk", sans-serif;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  border-bottom: 0.2rem solid var(--dark);
+  color: var(--dark);
+}
+
+.section-main-about p a:visited {
+  color: var(--dark);
+}
+
+.services-content {
+  margin: 0 auto;
+  margin-top: 13rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 119.6rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+
+.section-main .services-content .services p {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: var(--dark);
+  margin-top: 3.5rem;
+}
+
+.rule {
+  border-top: 0.5px solid #313453;
+}
+
+#section-main-text-2 {
+  margin-top: 20rem;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  color: var(--dark);
+  max-width: 68rem;
+  margin-bottom: 8.6rem;
+}
+
+.section-works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.works {
+  width: 100%;
+  height: 100%;
+}
+
+.work {
+  flex-basis: 49.5%;
+}
+
+#section-main-text-3 {
+  max-width: 50rem;
+  margin-top: 18rem;
+  font-weight: 700;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  color: var(--dark);
+  margin-bottom: 12rem;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  max-width: 111.6rem;
+  margin-left: 11.5rem;
+  flex-wrap: wrap;
+}
+
+/* Contact Section */
+#section-contact {
+  background: url(./assets/Rectangle\ 19.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 72.3rem;
+  padding-top: 9.4rem;
+  padding-bottom: 9.4rem;
+}
+.section-contact-container {
+  margin: 0 auto;
+  max-width: 144rem;
+  padding-right: 9rem;
+  padding-left: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-contact-container h3 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  color: #fcf3d1;
+  margin-bottom: 8rem;
+  max-width: 47rem;
+}
+
+.contact-form {
+  flex-basis: 46%;
+}
+
+.contact-form-map {
+  flex-basis: 48%;
+}
+
+input,
+textarea {
+  border: 0;
+  padding: 0.5rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #c4c4c4;
+  background: none;
+  -webkit-appearance: none;
+  font-family: Manrope;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #c4c4c4;
+
+  /* transition: outline 0.1s ease-in-out; */
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #c4c4c4;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(46, 9, 41, 0.153) inset;
+  box-shadow: 0 0 0px 1000px rgba(46, 9, 41, 0.153) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+form :not(input[type="submit"]) {
+  width: 47%;
+  margin-bottom: 3.7rem;
+}
+
+form :nth-child(even) {
+  margin-left: 5%;
+}
+
+#message {
+  display: block;
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: 0;
+  padding: 1.3rem 5.4rem;
+  margin: 0;
+  margin-top: 4.8rem;
+  background: var(--yellow);
+  border-radius: 0.4rem;
+  color: #ffffff;
+  display: block;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding-top: 11.8rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-right: 9rem;
+  padding-left: 9rem;
+}
+
+.footer-social-links {
+  margin-bottom: 4.1rem;
+  margin-top: 3.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+footer p {
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: var(--dark);
+}
+
+.social-links {
+  display: flex;
+  /* width: 40%; */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-links :not(:first-child) {
+  margin-left: 4.3rem;
+}
+
+.social-links a {
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-decoration-line: underline;
+  color: #272626;
+}
+
+/* About Modal */
+.modal-body {
+  position: fixed; /* Stay in place */
+  z-index: 9999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.about-modal {
+  min-height: 103.3rem;
+  width: 100 vw;
+  background: url(./assets/about-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-modal h2 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 5rem;
+  line-height: 6.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 10.7rem;
+  padding-bottom: 2.4rem;
+}
+
+.about-modal p {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #ffffff;
+  max-width: 86rem;
+  margin: 0 auto;
+}
+
+.close {
+  background: none;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+  border: 0;
+  top: 6.7rem;
+  right: 9rem;
+  font-size: 5rem;
+}
+
+.close:hover {
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.scale-90 {
+  transform: scale(0.9);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=cabinet-grotesk@200,300,400,500,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Think Thank Media</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+      defer
+    ></script>
+  </head>
+  <body
+    x-data="{isOpen: false, show:false, showBar:true}"
+    :class="{'no-scroll':show}"
+  >
+    <header
+      @scroll.window="showBar = (window.pageYOffset > 150) ? false : true"
+      class="main-header"
+    >
+      <section
+        class="modal-body"
+        x-show="show"
+        @click.away="show = false"
+        x-transition:enter="ease-out duration-300"
+        x-transition:enter-start=" scale-90"
+        x-transition:enter-end="scale-100"
+        x-transition:leave="ease-in duration-300"
+        x-transition:leave-start=" scale-100"
+        x-transition:leave-end=" scale-90"
+      >
+        <div class="about-modal">
+          <button @click="show = false" class="close">&times;</button>
+          <h2>ABOUT US</h2>
+
+          <p>
+            We are a young, driven, ambitious and vibrant team of Creatives,
+            Digital Experts, Brand Managers and Strategist committed to telling
+            Client stories and evolving the science of advertising and event
+            management by leveraging international best practices to achieve
+            desired result.
+            <br />
+            <br />
+            Ours is a culture of newness that sets us and our clientele apart
+            from the rest of the crop in the BTL, OOH, ATL, Digital and Creative
+            spheres.
+            <br />
+            <br />
+            Think Tank has over time revolutionized the media practice in
+            Nigeria by initiating standards to ensure unprecedented high media
+            compliance by media owners. As an agency, we are focused on
+            developing and providing world class digital media and event
+            management services to leading local and international clients
+            across this sub region.
+            <br />
+            <br />
+            In 2017, TTMA launched a high-profile event for the benefit of the
+            creative industry in Nigeria called the Creative Nigeria Summit. The
+            sole purpose of which was to bridge the gap between the Nigerian
+            government and the Creative industry thereby benefitting every
+            sector within the creative industry and also creating crucial
+            policies to help in the industries expansion in Nigeria - this event
+            has been in existence since 2017.
+            <br />
+            <br />
+            At TTMA, our goal is to change the perception of digital media and
+            advertising in Nigeria, and we intend to do this by delivering
+            innovative, creative, and effective ideas for our clients and their
+            brands every time.
+          </p>
+        </div>
+      </section>
+
+      <section class="navigation-section">
+        <nav
+          x-show="showBar"
+          class="flex items-center justify-between flex-wrap fixed w-full top-0"
+          @keydown.escape="isOpen = false"
+          :class="{ ' bg-black bg-opacity-40 lg:bg-transparent' : isOpen, 'bg-transparent': !isOpen }"
+        >
+          <!--Logo etc-->
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a
+              class="
+                text-white
+                no-underline
+                hover:text-white hover:no-underline
+              "
+              href="#"
+            >
+              <img
+                class="logo"
+                :class="{ 'pb-4' : isOpen }"
+                src="./assets/Asset 4@2x-8 4.svg"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!--Toggle button (hidden on large screens)-->
+          <button
+            @click="isOpen = !isOpen"
+            type="button"
+            class="
+              block
+              lg:hidden
+              px-2
+              text-gray-500
+              hover:text-white
+              focus:outline-none focus:text-white
+            "
+            :class="{ 'transition transform-180': isOpen }"
+          >
+            <svg
+              class="h-10 w-10 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                x-show="isOpen"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              />
+              <path
+                x-show="!isOpen"
+                fill-rule="evenodd"
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </button>
+
+          <!--Menu-->
+          <div
+            class="
+              w-full
+              flex-grow
+              lg:flex lg:items-center lg:w-auto
+              navigation-bar
+            "
+            :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
+            @click.away="isOpen = false"
+            x-show.transition="true"
+          >
+            <ul
+              class="
+                navigation-list
+                pt-6
+                lg:pt-0
+                list-reset
+                lg:flex
+                justify-end
+                flex-1
+                items-center
+              "
+              :class="{ 'pb-11': isOpen }"
+            >
+              <li class="" :class="{ 'mobile-nav-item': isOpen }">
+                <a
+                  class="
+                    inline-block
+                    text-gray-600
+                    no-underline
+                    hover:text-gray-200 hover:text-underline
+                    py-1
+                  "
+                  :class="{ 'mobile-nav-text' : isOpen }"
+                  href="#"
+                  @click="show = true"
+                  @click="isOpen = false"
+                  >About Us
+                </a>
+              </li>
+              <li class="" :class="{ 'mobile-nav-item': isOpen }">
+                <a
+                  class="
+                    inline-block
+                    text-gray-600
+                    no-underline
+                    hover:text-gray-200 hover:text-underline
+                    py-1
+                  "
+                  :class="{ 'mobile-nav-text' : isOpen }"
+                  href="#id-work"
+                  @click="isOpen = false"
+                  >Work
+                </a>
+              </li>
+              <li class="" :class="{ 'mobile-nav-item': isOpen }">
+                <a
+                  class="
+                    inline-block
+                    text-gray-600
+                    no-underline
+                    hover:text-gray-200 hover:text-underline
+                    py-1
+                  "
+                  :class="{ 'mobile-nav-text' : isOpen }"
+                  href="#id-contact"
+                  @click="isOpen = false"
+                  >Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero-1">
+            <section class="section-hero">
+              <h2>
+                We Tell Stories, Leverage International Best Practices & Help
+                you get the attention of your target.
+              </h2>
+            </section>
+          </div>
+          <div class="swiper-slide hero-2">
+            <section class="section-hero">
+              <h2>Media & Advertising</h2>
+            </section>
+          </div>
+          <div class="swiper-slide hero-3">
+            <section class="section-hero">
+              <h2>Event Planning</h2>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-main">
+        <div id="id-about" class="section-main-about">
+          <h3 id="section-main-text-1">
+            An all-round independent media agency based in Lagos, Nigeria
+          </h3>
+          <p>
+            We are a young, driven, ambitious and vibrant team of Creatives,
+            Digital Experts, Brand Managers and Strategist committed to telling
+            Client stories and evolving the science of advertising and event
+            management by leveraging international best practices to achieve
+            desired result. Ours is a culture of newness that sets us and our
+            clientele apart from the rest of the crop in the BTL, OOH, ATL,
+            Digital and Creative spheres.
+          </p>
+          <p><a @click="show = true" href="#id-about">More about us</a></p>
+        </div>
+        <div class="services-content">
+          <div class="services">
+            <img src="./assets/logos_eventsentry.svg" alt="" />
+            <p>Corporate Branding</p>
+          </div>
+          <div class="services">
+            <img src="./assets/Frame 6.svg" alt="" />
+            <p>Media & Advertising</p>
+          </div>
+          <div class="services">
+            <img src="./assets/logos_google-tag-manager.svg" alt="" />
+            <p>Account Management</p>
+          </div>
+          <div class="services">
+            <img src="./assets/Frame 5.svg" alt="" />
+            <p>Event Planing</p>
+          </div>
+        </div>
+        <hr id="id-work" class="rule" />
+        <h3 id="section-main-text-2">
+          Our culture is newness that sets us and our clientele apart from the
+          rest of the crop.
+        </h3>
+        <div class="section-works">
+          <div class="work">
+            <img src="./assets/Rectangle 8.svg" alt="" class="works" />
+          </div>
+          <div class="work">
+            <img src="./assets/Rectangle 9.svg" alt="" class="works" />
+          </div>
+          <div class="work">
+            <img src="./assets/Rectangle 30.svg" alt="" class="works" />
+          </div>
+          <div class="work">
+            <img src="./assets/Rectangle 5.svg" alt="" class="works" />
+          </div>
+          <div class="work">
+            <img src="./assets/Rectangle 11.svg" alt="" class="works" />
+          </div>
+          <div class="work">
+            <img src="./assets/Rectangle 31.svg" alt="" class="works" />
+          </div>
+        </div>
+        <h3 id="section-main-text-3">
+          Our clientele sets us apart from the rest of the crop.
+        </h3>
+        <div class="clients">
+          <div>
+            <img width="100%" src="./assets/lris_lhd8ny 1 3.svg" alt="" />
+          </div>
+          <div>
+            <img width="100%" src="./assets/freetv_black 1.svg" alt="" />
+          </div>
+          <div>
+            <img width="100%" src="./assets/Lawman Logo 1.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="section-contact">
+        <div class="section-contact-container">
+          <div id="id-contact" class="contact-form">
+            <h3>
+              Let’s do business;<br />
+              Leave us a message and we’d get back to you.
+            </h3>
+            <form action="">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+              />
+              <textarea
+                name=""
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" value="Send Message" />
+            </form>
+          </div>
+          <div class="contact-form-map">
+            <img width="100%" src="./assets/Group 50.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="./assets/Asset 4@2x-8 3.svg" alt="" />
+      <div class="footer-social-links">
+        <p>&copy; TTMA 2021, All Rights Reserved</p>
+
+        <ul class="social-links">
+          <a href=""> <li>Email</li> </a
+          ><a href=""> <li>Instagram</li> </a
+          ><a href="">
+            <li>Facebook</li>
+          </a>
+          <a href="">
+            <li>Twitter</li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // autoplay: {
+        //   delay: 5000,
+        //   // pauseOnMouseEnter: true,
+        // },
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
