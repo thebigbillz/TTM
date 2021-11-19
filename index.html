@@ -36,6 +36,24 @@
   <body
     x-data="{isOpen: false, show:false, showBar:true}"
     :class="{'no-scroll':show}"
+    x-on:mouseenter="
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width > 1024) {
+      isOpen = false; clearTimeout(timeout)
+    }
+    "
+    x-on:mouseleave="
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width > 1024) {
+     timeout = setTimeout(() => { isOpen = false }, 100)
+    }
+    "
+    @resize.window="
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width > 1024) {
+     isOpen = false
+    }
+    "
   >
     <header
       @scroll.window="showBar = (window.pageYOffset > 150) ? false : true"
@@ -335,20 +353,37 @@
               Let’s do business;<br />
               Leave us a message and we’d get back to you.
             </h3>
-            <form action="">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" />
+            <form @submit.prevent="default" action="">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                minlength="3"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
               <input
                 type="text"
                 name="company"
                 id="company"
                 placeholder="Company"
+                required
+                minlength="3"
               />
               <input
                 type="tel"
                 name="phone"
                 id="phone"
                 placeholder="Phone Number"
+                required
+                minlength="7"
               />
               <textarea
                 name=""
@@ -356,6 +391,8 @@
                 cols="30"
                 rows="5"
                 placeholder="Message"
+                required
+                minlength="10"
               ></textarea>
               <input type="submit" value="Send Message" />
             </form>
