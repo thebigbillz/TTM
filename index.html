@@ -36,18 +36,6 @@
   <body
     x-data="{isOpen: false, show:false, showBar:true}"
     :class="{'no-scroll':show}"
-    x-on:mouseenter="
-    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width > 1024) {
-      isOpen = false; clearTimeout(timeout)
-    }
-    "
-    x-on:mouseleave="
-    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width > 1024) {
-     timeout = setTimeout(() => { isOpen = false }, 100)
-    }
-    "
     @resize.window="
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width > 1024) {
