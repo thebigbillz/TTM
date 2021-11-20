@@ -219,7 +219,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20rem;
 }
 
 .section-main .services-content .services p {
@@ -233,10 +232,11 @@ html {
 
 .rule {
   border-top: 0.5px solid #313453;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 #section-main-text-2 {
-  margin-top: 20rem;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -276,8 +276,12 @@ html {
   display: flex;
   justify-content: space-between;
   max-width: 111.6rem;
-  margin-left: 11.5rem;
+  margin-left: 11.4rem;
   flex-wrap: wrap;
+}
+
+.clients :nth-child(2) {
+  margin-left: 10rem;
 }
 
 /* Contact Section */
@@ -511,4 +515,217 @@ footer p {
 
 .no-scroll {
   overflow-y: hidden;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1024px) {
+  .clients {
+    margin-left: 3.5rem;
+  }
+  .client {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .client img {
+  }
+
+  .rule {
+    margin-top: calc(6rem + 5vw);
+    margin-bottom: calc(6rem + 5vw);
+  }
+
+  .hero-1 h2,
+  .hero-2 h2,
+  .hero-3 h2 {
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-size: calc(2.5rem + 2.5vw);
+    font-weight: 700;
+    line-height: 7.4rem;
+    max-width: 82rem;
+    margin-top: 24.1rem;
+  }
+  .hero-2 h2 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 700;
+    line-height: 6.2rem;
+    max-width: 32rem;
+    margin-top: 29rem;
+    text-transform: uppercase;
+  }
+
+  .hero-3 h2 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 700;
+    line-height: 6.2rem;
+    max-width: 40rem;
+    margin-top: 33.5rem;
+    text-transform: uppercase;
+  }
+
+  .section-main {
+    padding-bottom: calc(7rem + 5vw);
+  }
+
+  #section-main-text-3 {
+    margin-top: calc(6rem + 5vw);
+    margin-bottom: calc(3rem + 4vw);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-section nav {
+    padding-top: calc(2rem + 1.4vw);
+    padding-left: calc(1rem + 8.2vw);
+    padding-right: calc(1rem + 11vw);
+  }
+  .hero-1 h2 {
+    max-width: 71rem;
+  }
+
+  /* About Modal */
+  .about-modal {
+    min-height: 103.3rem;
+    width: 100 vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .about-modal h2 {
+    font-size: 3.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-modal p {
+    font-size: 2.35rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    line-height: 3rem;
+  }
+  .close {
+    top: 3vw;
+    right: 7vw;
+  }
+
+  .services-content {
+    margin-top: 5rem;
+    justify-content: space-around;
+  }
+
+  .services {
+    flex-basis: 45%;
+  }
+
+  .services-content :first-child,
+  .services-content :nth-child(2) {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .section-main .services-content .services p {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .navigation-section nav {
+    padding-top: calc(2rem + 1.4vw);
+    padding-left: calc(0.5rem + 6.2vw);
+    padding-right: calc(0.5rem + 8vw);
+  }
+
+  .hero-1,
+  .hero-2,
+  .hero-3 {
+    min-height: 90vh;
+  }
+  .hero-1 h2,
+  .hero-2 h2,
+  .hero-3 h2 {
+    font-size: calc(2rem + 1.8vw);
+    line-height: 10vw;
+    max-width: 90vw;
+    margin-top: 33vh;
+  }
+  .hero-2 h2 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 700;
+    line-height: 6.2rem;
+    max-width: 32rem;
+    margin-top: 29rem;
+    text-transform: uppercase;
+  }
+
+  .hero-3 h2 {
+    font-size: calc(2rem + 2vw);
+    font-weight: 700;
+    line-height: 6.2rem;
+    max-width: 40rem;
+    margin-top: 33.5rem;
+    text-transform: uppercase;
+  }
+
+  .swiper-pagination {
+    top: 90%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .about-modal p {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    line-height: 2.5rem;
+  }
+
+  .section-main {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  #section-main-text-1 {
+    font-size: 2.35rem;
+    line-height: 3.5rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .section-main-about p:first-of-type {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .section-main-about p a {
+    font-size: 1.7rem;
+  }
+  .services-content {
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: space-between;
+  }
+
+  .services {
+    flex-basis: 80%;
+    margin-top: 1rem;
+  }
+
+  .section-main .services-content .services p {
+    font-size: 2rem;
+  }
+
+  .rule {
+    margin-top: calc(2rem + 5vw);
+    margin-bottom: calc(4rem + 5vw);
+  }
 }
