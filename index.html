@@ -341,7 +341,7 @@
               Let’s do business;<br />
               Leave us a message and we’d get back to you.
             </h3>
-            <form @submit.prevent="default" action="">
+            <form class="contact-form" action="">
               <input
                 type="text"
                 name="name"
@@ -382,7 +382,7 @@
                 required
                 minlength="10"
               ></textarea>
-              <input type="submit" value="Send Message" />
+              <input id="submit" type="submit" value="Send Message" />
             </form>
           </div>
           <div class="contact-form-map">
@@ -410,6 +410,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         // autoplay: {
