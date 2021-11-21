@@ -324,6 +324,16 @@ html {
   flex-basis: 48%;
 }
 
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 input,
 textarea {
   border: 0;
@@ -331,7 +341,6 @@ textarea {
   padding-bottom: 1.3rem;
   border-bottom: 1px solid #c4c4c4;
   background: none;
-  -webkit-appearance: none;
   font-family: Manrope;
   font-size: 1.6rem;
   line-height: 2.2rem;
