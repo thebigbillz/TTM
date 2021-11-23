@@ -14,6 +14,54 @@ html {
   font-size: 62.5% !important;
 }
 
+/* Fonts */
+/* Manrope */
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Manrope Medium*/
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Cabinet G */
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Regular.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Medium.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Medium.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Bold.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Header Section */
 /* .main-header {
   background: url(./assets/main-header.svg);
@@ -129,12 +177,14 @@ html {
   list-style: none;
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 2.2rem;
 }
 
 .navigation-list li a {
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 2.2rem;
   color: var(--white);
   text-decoration: none;
@@ -194,7 +244,7 @@ html {
 .section-main-about p a {
   font-family: "Cabinet Grotesk", sans-serif;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
   border-bottom: 0.2rem solid var(--dark);
@@ -219,11 +269,12 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* margin-bottom: 0rem; */
 }
 
 .section-main .services-content .services p {
   font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.4rem;
   line-height: 3rem;
   color: var(--dark);
@@ -252,10 +303,10 @@ html {
   flex-wrap: wrap;
 }
 
-.works {
+/* .works {
   width: 100%;
   height: 100%;
-}
+} */
 
 .work {
   flex-basis: 49.5%;
@@ -307,7 +358,7 @@ html {
 
 .section-contact-container h3 {
   font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
   line-height: 3.7rem;
   color: #fcf3d1;
@@ -323,6 +374,16 @@ html {
   flex-basis: 48%;
 }
 
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 input,
 textarea {
   border: 0;
@@ -330,13 +391,11 @@ textarea {
   padding-bottom: 1.3rem;
   border-bottom: 1px solid #c4c4c4;
   background: none;
-  -webkit-appearance: none;
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #c4c4c4;
-
-  /* transition: outline 0.1s ease-in-out; */
 }
 
 input:focus,
@@ -379,6 +438,7 @@ input[type="submit"] {
   border-radius: 0.4rem;
   color: #ffffff;
   display: block;
+  transition: all 1s ease-in-out;
 }
 input[type="submit"] {
   cursor: pointer;
@@ -399,6 +459,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 footer p {
@@ -414,16 +475,16 @@ footer p {
   display: flex;
   /* width: 40%; */
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .social-links :not(:first-child) {
   margin-left: 4.3rem;
 }
 
-.social-links a {
+.social-links li a {
   font-family: "Manrope", sans-serif;
 
   font-weight: 500;
@@ -460,6 +521,7 @@ footer p {
   font-size: 5rem;
   line-height: 6.2rem;
   text-align: center;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 10.7rem;
@@ -471,6 +533,7 @@ footer p {
   font-size: 2.4rem;
   line-height: 3rem;
   text-align: center;
+  font-weight: 400;
   color: #ffffff;
   max-width: 86rem;
   margin: 0 auto;
@@ -480,6 +543,7 @@ footer p {
   background: none;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 100;
+  font-weight: 400;
   color: white;
   position: absolute;
   border: 0;
@@ -528,8 +592,6 @@ footer p {
     justify-content: center;
     margin-left: 0;
   }
-  .client img {
-  }
 
   .rule {
     margin-top: calc(6rem + 5vw);
@@ -574,7 +636,14 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
+  .section-main,
+  .section-contact-container,
+  footer {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+
   .navigation-section nav {
     padding-top: calc(2rem + 1.4vw);
     padding-left: calc(1rem + 8.2vw);
@@ -584,7 +653,10 @@ footer p {
     max-width: 71rem;
   }
 
-  /* About Modal */
+  .swiper-pagination {
+    top: 70%;
+  }
+
   .about-modal {
     min-height: 103.3rem;
     width: 100 vw;
@@ -610,6 +682,15 @@ footer p {
     right: 7vw;
   }
 
+  #section-main-text-1 {
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    max-width: 58rem;
+  }
+  .section-main-about p:first-of-type {
+    line-height: inherit;
+  }
+
   .services-content {
     margin-top: 5rem;
     justify-content: space-around;
@@ -628,10 +709,131 @@ footer p {
   .section-main .services-content .services p {
     font-size: 2.4rem;
     margin-top: 1rem;
+    text-align: center;
+  }
+  #section-main-text-2 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    max-width: 48rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .section-works {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .work {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  .works {
+    margin: 0 auto;
+  }
+  .section-main {
+    padding-bottom: 11rem;
+  }
+
+  #section-main-text-3 {
+    max-width: 48rem;
+    margin-top: 11rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin-bottom: 7rem;
+  }
+
+  .clients {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .client {
+    flex-basis: 50%;
+  }
+
+  .clients :nth-child(2) {
+    margin-left: 0rem;
+  }
+  .clients :not(:last-child) {
+    margin-bottom: 5.5rem;
+  }
+
+  footer {
+    padding-top: 7.8rem;
+  }
+  .footer-social-links {
+    margin-bottom: 4.1rem;
+    margin-top: 3.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  .social-links {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .social-links :not(:first-child) {
+    margin-left: 3.3rem;
+  }
+
+  .social-links li a {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .section-contact-container h3 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 8rem;
+    max-width: 47rem;
+    text-align: justify;
+  }
+  .section-contact-container {
+    justify-content: center;
+  }
+
+  .contact-form {
+    flex-basis: 80%;
+    padding-bottom: 3.5rem;
+  }
+
+  .contact-form-map {
+    flex-basis: 80%;
+    display: none;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  form :not(input[type="submit"]) {
+    width: 100%;
+    margin-bottom: 3.7rem;
+  }
+
+  form :nth-child(even) {
+    margin-left: 0;
+  }
+
+  #message {
+    display: block;
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 520px) {
   .navigation-section nav {
     padding-top: calc(2rem + 1.4vw);
     padding-left: calc(0.5rem + 6.2vw);
@@ -690,7 +892,7 @@ footer p {
     padding-right: 3.5rem;
     padding-left: 3.5rem;
     padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 8rem;
   }
 
   #section-main-text-1 {
@@ -720,6 +922,11 @@ footer p {
     margin-top: 1rem;
   }
 
+  .services-content :not(:last-child) {
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+  }
+
   .section-main .services-content .services p {
     font-size: 2rem;
   }
@@ -727,5 +934,85 @@ footer p {
   .rule {
     margin-top: calc(2rem + 5vw);
     margin-bottom: calc(4rem + 5vw);
+  }
+
+  .client {
+    flex-basis: 100%;
+  }
+
+  #section-main-text-2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    max-width: 48rem;
+    margin-bottom: 5rem;
+  }
+
+  #section-main-text-3 {
+    margin-top: 11rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    max-width: 48rem;
+    margin-bottom: 5rem;
+  }
+
+  .footer-social-links {
+    margin-bottom: 4.1rem;
+    margin-top: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+
+  .social-links {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .social-links :not(:first-child) {
+    margin-left: 3.3rem;
+  }
+
+  .social-links li a {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  .contact-form {
+    flex-basis: 100%;
+  }
+
+  .contact-form-map {
+    flex-basis: 100%;
+  }
+  .section-contact-container h3 {
+    font-size: 2.35rem;
+    line-height: 3.5rem;
+    margin-bottom: 5rem;
+    max-width: 47rem;
+    text-align: left;
+  }
+
+  input[type="submit"] {
+    padding: 1.1rem 5rem;
+
+    display: block;
+    width: 100%;
+  }
+  input,
+  textarea {
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 }
