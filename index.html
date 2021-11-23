@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="We Tell Stories, Leverage International Best Practices & Help
+    you get the attention of your target."
+    />
+    <meta name="robots" content="index, follow" />
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +23,13 @@
     <link
       href="https://api.fontshare.com/css?f[]=cabinet-grotesk@200,300,400,500,700,800&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    /> -->
+    <link href="./libraries/tailwind.min.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./libraries/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Think Tank Media</title>
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
-      defer
-    ></script>
+    <script src="./libraries/alpine.min.js" defer></script>
   </head>
   <body
     x-data="{isOpen: false, show:false, showBar:true}"
@@ -122,7 +119,7 @@
                 class="logo"
                 :class="{ 'pb-4' : isOpen }"
                 src="./assets/Asset 4@2x-8 4.svg"
-                alt=""
+                alt="Think Thank Logo"
               />
             </a>
           </div>
@@ -278,19 +275,25 @@
         </div>
         <div class="services-content">
           <div class="services">
-            <img src="./assets/logos_eventsentry.svg" alt="" />
+            <img
+              src="./assets/logos_eventsentry.svg"
+              alt="Corporate Branding"
+            />
             <p>Corporate Branding</p>
           </div>
           <div class="services">
-            <img src="./assets/Frame 6.svg" alt="" />
+            <img src="./assets/Frame 6.svg" alt="Media & Advertising" />
             <p>Media & Advertising</p>
           </div>
           <div class="services">
-            <img src="./assets/logos_google-tag-manager.svg" alt="" />
+            <img
+              src="./assets/logos_google-tag-manager.svg"
+              alt="Account Management"
+            />
             <p>Account Management</p>
           </div>
           <div class="services">
-            <img src="./assets/Frame 5.svg" alt="" />
+            <img src="./assets/Frame 5.svg" alt="Event Planing" />
             <p>Event Planing</p>
           </div>
         </div>
@@ -301,22 +304,22 @@
         </h3>
         <div class="section-works">
           <div class="work">
-            <img src="./assets/Rectangle 8.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 8.svg" alt="work" class="works" />
           </div>
           <div class="work">
-            <img src="./assets/Rectangle 9.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 9.svg" alt="work" class="works" />
           </div>
           <div class="work">
-            <img src="./assets/Rectangle 30.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 30.svg" alt="work" class="works" />
           </div>
           <div class="work">
-            <img src="./assets/Rectangle 5.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 5.svg" alt="work" class="works" />
           </div>
           <div class="work">
-            <img src="./assets/Rectangle 11.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 11.svg" alt="work" class="works" />
           </div>
           <div class="work">
-            <img src="./assets/Rectangle 31.svg" alt="" class="works" />
+            <img src="./assets/Rectangle 31.svg" alt="work" class="works" />
           </div>
         </div>
         <h3 id="section-main-text-3">
@@ -324,13 +327,13 @@
         </h3>
         <div class="clients">
           <div class="client">
-            <img width="" src="./assets/lris_lhd8ny 1 3.svg" alt="" />
+            <img width="" src="./assets/lris_lhd8ny 1 3.svg" alt="LIRS" />
           </div>
           <div class="client">
-            <img width="" src="./assets/freetv_black 1.svg" alt="" />
+            <img width="" src="./assets/freetv_black 1.svg" alt="Free Tv" />
           </div>
           <div class="client">
-            <img width="" src="./assets/Lawman Logo 1.svg" alt="" />
+            <img width="" src="./assets/Lawman Logo 1.svg" alt="Lawma" />
           </div>
         </div>
       </section>
@@ -386,30 +389,27 @@
             </form>
           </div>
           <div class="contact-form-map">
-            <img width="100%" src="./assets/Group 50.svg" alt="" />
+            <img width="100%" src="./assets/Group 50.svg" alt="Location Map" />
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <img src="./assets/Asset 4@2x-8 3.svg" alt="" />
+      <img src="./assets/Asset 4@2x-8 3.svg" alt="Think Thank Logo" />
       <div class="footer-social-links">
         <p>&copy; TTMA 2021, All Rights Reserved</p>
 
         <ul class="social-links">
-          <a href=""> <li>Email</li> </a
-          ><a href=""> <li>Instagram</li> </a
-          ><a href="">
-            <li>Facebook</li>
-          </a>
-          <a href="">
-            <li>Twitter</li>
-          </a>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./libraries/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {

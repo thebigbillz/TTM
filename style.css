@@ -14,6 +14,54 @@ html {
   font-size: 62.5% !important;
 }
 
+/* Fonts */
+/* Manrope */
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Manrope Medium*/
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Cabinet G */
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Regular.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Medium.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Medium.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Bold.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Header Section */
 /* .main-header {
   background: url(./assets/main-header.svg);
@@ -129,12 +177,14 @@ html {
   list-style: none;
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 2.2rem;
 }
 
 .navigation-list li a {
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 2.2rem;
   color: var(--white);
   text-decoration: none;
@@ -194,7 +244,7 @@ html {
 .section-main-about p a {
   font-family: "Cabinet Grotesk", sans-serif;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
   border-bottom: 0.2rem solid var(--dark);
@@ -224,7 +274,7 @@ html {
 
 .section-main .services-content .services p {
   font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.4rem;
   line-height: 3rem;
   color: var(--dark);
@@ -308,7 +358,7 @@ html {
 
 .section-contact-container h3 {
   font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
   line-height: 3.7rem;
   color: #fcf3d1;
@@ -341,7 +391,8 @@ textarea {
   padding-bottom: 1.3rem;
   border-bottom: 1px solid #c4c4c4;
   background: none;
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #c4c4c4;
@@ -433,7 +484,7 @@ footer p {
   margin-left: 4.3rem;
 }
 
-.social-links a {
+.social-links li a {
   font-family: "Manrope", sans-serif;
 
   font-weight: 500;
@@ -470,6 +521,7 @@ footer p {
   font-size: 5rem;
   line-height: 6.2rem;
   text-align: center;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 10.7rem;
@@ -481,6 +533,7 @@ footer p {
   font-size: 2.4rem;
   line-height: 3rem;
   text-align: center;
+  font-weight: 400;
   color: #ffffff;
   max-width: 86rem;
   margin: 0 auto;
@@ -490,6 +543,7 @@ footer p {
   background: none;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 100;
+  font-weight: 400;
   color: white;
   position: absolute;
   border: 0;
@@ -734,7 +788,7 @@ footer p {
     margin-left: 3.3rem;
   }
 
-  .social-links a {
+  .social-links li a {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
@@ -930,7 +984,7 @@ footer p {
     margin-left: 3.3rem;
   }
 
-  .social-links a {
+  .social-links li a {
     font-size: 1.3rem;
     line-height: 2.5rem;
   }
