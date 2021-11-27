@@ -315,6 +315,39 @@ html {
 
 .work {
   flex-basis: 49.5%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.work:hover .overlay {
+  opacity: 1;
+}
+
+.work:hover {
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  position: absolute;
+  top: 83.5%;
+  left: 10.5%;
 }
 
 #section-main-text-3 {
@@ -733,7 +766,8 @@ footer p {
     flex-basis: 100%;
     margin-bottom: 1rem;
   }
-  .works {
+  .works,
+  .overlay img {
     margin: 0 auto;
   }
   .section-main {
