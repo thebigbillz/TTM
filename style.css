@@ -21,6 +21,7 @@ html {
   font-family: "Manrope";
   src: url("/fonts/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -30,6 +31,7 @@ html {
   font-family: "Manrope";
   src: url("/fonts/Manrope-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -41,6 +43,7 @@ html {
     url("./fonts/CabinetGrotesk-Regular.woff") format("woff"),
     url("./fonts/CabinetGrotesk-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -50,6 +53,7 @@ html {
     url("./fonts/CabinetGrotesk-Medium.woff") format("woff"),
     url("./fonts/CabinetGrotesk-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -59,6 +63,7 @@ html {
     url("./fonts/CabinetGrotesk-Bold.woff") format("woff"),
     url("./fonts/CabinetGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -310,6 +315,39 @@ html {
 
 .work {
   flex-basis: 49.5%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.work:hover .overlay {
+  opacity: 1;
+}
+
+.work:hover {
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  position: absolute;
+  top: 83.5%;
+  left: 10.5%;
 }
 
 #section-main-text-3 {
@@ -728,7 +766,8 @@ footer p {
     flex-basis: 100%;
     margin-bottom: 1rem;
   }
-  .works {
+  .works,
+  .overlay img {
     margin: 0 auto;
   }
   .section-main {
@@ -856,9 +895,9 @@ footer p {
   .hero-2 h2 {
     font-size: calc(2rem + 2vw);
     font-weight: 700;
-    line-height: 6.2rem;
+    line-height: 4.5rem;
     max-width: 32rem;
-    margin-top: 29rem;
+    margin-top: 33.5vh;
     text-transform: uppercase;
   }
 
@@ -867,7 +906,7 @@ footer p {
     font-weight: 700;
     line-height: 6.2rem;
     max-width: 40rem;
-    margin-top: 33.5rem;
+    margin-top: 34.5vh;
     text-transform: uppercase;
   }
 
