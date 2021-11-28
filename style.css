@@ -935,7 +935,7 @@ footer p {
   .section-main {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
-    padding-top: 5.5rem;
+    padding-top: 6.5rem;
     padding-bottom: 8rem;
     text-align: center;
   }
@@ -1032,6 +1032,10 @@ footer p {
   .social-links li a {
     font-size: 1.3rem;
     line-height: 2.5rem;
+  }
+
+  .section-contact {
+    padding-bottom: 6.5rem;
   }
 
   .contact-form {
