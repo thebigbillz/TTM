@@ -430,7 +430,7 @@ textarea {
   border-bottom: 1px solid #c4c4c4;
   background: none;
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #c4c4c4;
@@ -1034,6 +1034,11 @@ footer p {
 
   .contact-form-map {
     flex-basis: 100%;
+  }
+
+  .section-contact-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .section-contact-container h3 {
     font-size: 2.35rem;
