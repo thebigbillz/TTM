@@ -929,7 +929,7 @@ footer p {
     text-align: center;
     padding-bottom: 3rem;
     padding-top: 0;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 
   .section-main {
@@ -1035,7 +1035,7 @@ footer p {
   }
 
   #section-contact {
-    padding-bottom: 6.5rem;
+    padding-bottom: 5rem;
   }
 
   .contact-form {
