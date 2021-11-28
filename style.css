@@ -960,6 +960,7 @@ footer p {
 
   .section-main-about p a {
     font-size: 1.7rem;
+    opacity: 0.85;
   }
   .services-content {
     margin-top: 5rem;
