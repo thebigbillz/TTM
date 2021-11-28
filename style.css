@@ -242,7 +242,7 @@ html {
   font-weight: 500;
   line-height: 3.5rem;
   color: var(--dark);
-  opacity: 0.9;
+  opacity: 0.8;
   max-width: 73rem;
   padding-bottom: 2rem;
 }
@@ -949,7 +949,7 @@ footer p {
   .section-main-about p:first-of-type {
     font-size: 1.9rem;
     font-weight: 500;
-    line-height: 3rem;
+    line-height: 3.3rem;
     padding-bottom: 1.5rem;
     word-spacing: -1.1px;
   }
