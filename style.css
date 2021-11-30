@@ -245,6 +245,7 @@ html {
   opacity: 0.8;
   max-width: 73rem;
   padding-bottom: 2rem;
+  text-align: justify;
 }
 
 .section-main-about p a {
