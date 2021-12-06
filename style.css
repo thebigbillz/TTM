@@ -250,7 +250,7 @@ html {
   color: var(--dark);
   opacity: 0.9;
   max-width: 97rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3.3rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -1045,7 +1045,7 @@ footer p {
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 3.2rem;
-    padding-bottom: 1.9rem;
+    padding-bottom: 2.1rem;
   }
 
   .section-main-about p a {
