@@ -304,7 +304,7 @@ html {
 }
 
 .rule {
-  border-top: 0.5px solid #313453;
+  border-top: 1px solid #313453;
   margin-top: 20rem;
   margin-bottom: 20rem;
 }
@@ -780,7 +780,6 @@ footer p {
     max-width: 58rem;
   }
   .section-main-about p:first-of-type {
-    line-height: inherit;
     font-size: 2.1rem;
   }
 
@@ -957,6 +956,7 @@ footer p {
 
   .section-main-about p:first-of-type {
     font-size: 1.9rem;
+    line-height: 3.2rem;
   }
 
   .section-main-about p a {
@@ -1036,21 +1036,21 @@ footer p {
   }
 
   #section-main-text-1 {
-    font-size: 2.5rem;
-    line-height: 3.2rem;
-    padding-bottom: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    padding-bottom: 2.25rem;
   }
 
   .section-main-about p:first-of-type {
     font-size: 1.9rem;
     font-weight: 500;
-    line-height: 3.3rem;
-    padding-bottom: 1.7rem;
+    line-height: 3.2rem;
+    padding-bottom: 1.9rem;
   }
 
   .section-main-about p a {
     font-size: 1.8rem;
-    opacity: 0.85;
+    opacity: 0.9;
   }
   .services-content {
     margin-top: 5rem;
