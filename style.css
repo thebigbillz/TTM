@@ -226,6 +226,10 @@ html {
   padding-bottom: 20rem;
 }
 
+.section-main-about {
+  margin: 0 auto;
+}
+
 #section-main-text-1 {
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 4rem;
@@ -233,19 +237,27 @@ html {
   line-height: 5rem;
   color: var(--dark);
   max-width: 68rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .section-main-about p:first-of-type {
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 2.2rem;
   font-weight: 500;
-  line-height: 3.5rem;
+  line-height: 3.7rem;
   color: var(--dark);
-  opacity: 0.8;
-  max-width: 73rem;
-  padding-bottom: 2rem;
-  text-align: justify;
+  opacity: 0.9;
+  max-width: 97rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-main-about p {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section-main-about p a {
@@ -257,6 +269,8 @@ html {
   border-bottom: 0.2rem solid var(--dark);
   color: var(--dark);
   line-height: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .section-main-about p a:visited {
@@ -624,7 +638,7 @@ footer p {
 
 /* Media queries */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1064px) {
   .clients {
     margin-left: 3.5rem;
   }
@@ -671,13 +685,50 @@ footer p {
     padding-bottom: calc(7rem + 5vw);
   }
 
+  .section-main .services-content .services p {
+    font-size: 2.2rem;
+    color: var(--dark);
+    margin-top: 3.5rem;
+  }
+
   #section-main-text-3 {
     margin-top: calc(6rem + 5vw);
     margin-bottom: calc(3rem + 4vw);
   }
+
+  #section-main-text-1 {
+    font-size: 3.7rem;
+    max-width: 63rem;
+  }
+
+  #section-main-text-2,
+  #section-main-text-3,
+  .section-contact-container h3 {
+    font-size: 2.8rem;
+  }
+
+  #section-main-text-2 {
+    max-width: 57rem;
+  }
+
+  #section-main-text-3 {
+    max-width: 46rem;
+  }
+
+  .section-contact-container h3 {
+    max-width: 44rem;
+  }
+
+  .section-main-about p:first-of-type {
+    font-size: 2.1rem;
+  }
+
+  .section-main-about p a {
+    font-size: 2rem;
+  }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1004px) {
   .section-main,
   .section-contact-container,
   footer {
@@ -724,12 +775,13 @@ footer p {
   }
 
   #section-main-text-1 {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     line-height: 4.7rem;
     max-width: 58rem;
   }
   .section-main-about p:first-of-type {
     line-height: inherit;
+    font-size: 2.1rem;
   }
 
   .services-content {
@@ -748,12 +800,12 @@ footer p {
   }
 
   .section-main .services-content .services p {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     margin-top: 1rem;
     text-align: center;
   }
   #section-main-text-2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     line-height: 3.4rem;
     max-width: 48rem;
     margin-bottom: 5.6rem;
@@ -780,7 +832,7 @@ footer p {
   #section-main-text-3 {
     max-width: 48rem;
     margin-top: 11rem;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     line-height: 3.4rem;
     margin-bottom: 7rem;
   }
@@ -873,6 +925,43 @@ footer p {
     display: block;
     width: 100%;
   }
+
+  input,
+  textarea {
+    font-size: 1.4rem;
+  }
+
+  #section-main-text-1 {
+    font-size: 3.4rem;
+    max-width: 58rem;
+    line-height: 4.5rem;
+  }
+
+  #section-main-text-2,
+  #section-main-text-3,
+  .section-contact-container h3 {
+    font-size: 2.6rem;
+  }
+
+  #section-main-text-2 {
+    max-width: 55rem;
+  }
+
+  #section-main-text-3 {
+    max-width: 44rem;
+  }
+
+  .section-contact-container h3 {
+    max-width: 42rem;
+  }
+
+  .section-main-about p:first-of-type {
+    font-size: 1.9rem;
+  }
+
+  .section-main-about p a {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -947,7 +1036,7 @@ footer p {
   }
 
   #section-main-text-1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 3.2rem;
     padding-bottom: 2.4rem;
   }
@@ -956,11 +1045,11 @@ footer p {
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 3.3rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.7rem;
   }
 
   .section-main-about p a {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     opacity: 0.85;
   }
   .services-content {
